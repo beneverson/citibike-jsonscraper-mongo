@@ -15,7 +15,7 @@ s = scheduler(time, sleep)
 # set up mongo db stuff
 client = MongoClient()
 db = client.citibike
-collection = db.archive_test
+collection = db.archive
 
 def run_periodically(start, end, interval, func):
     event_time = start
@@ -37,4 +37,4 @@ def get_stations():
     # now insert the record into the mongo database
     stations_id = collection.insert(all_stations)
 
-run_periodically(time()+5, time()+(3*24*60*60), 10, get_stations)
+run_periodically(time()+5, time()+(7*24*60*60), 600, get_stations)
