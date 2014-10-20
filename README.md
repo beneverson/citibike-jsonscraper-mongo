@@ -1,5 +1,4 @@
 # Citibike Data Scraper for MongoDB
-================
 
 ##### *Retrieve data from Citibike's JSON feed, and insert it into a MongoDB instance.*
 
