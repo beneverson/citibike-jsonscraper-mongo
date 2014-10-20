@@ -10,7 +10,7 @@ This script runs periodically, so the start time, duration and frequency of the 
 
 ###### Usage:
 ```
-python json_scraper.py
+python jsonscraper.py
 
 ```
 
